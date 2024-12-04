@@ -31,13 +31,15 @@ This guide will show you how to set up and test the backend API for the LearnCha
 
 ---
 
-## Testing the API
+## Testing with the API
 
 ### You can equally test the api using the url below
 
 ```
-
+https://learnchain-aj5s.onrender.com
 ```
+
+### Setup and test locally
 
 4. **Add a Course (POST /courses)**
 
