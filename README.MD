@@ -33,37 +33,53 @@ This guide will show you how to set up and test the backend API for the LearnCha
 
 ## Testing with the API
 
-### You can equally test the api using the url below
+### You can equally test the api using the url below. The url below should serve as your root url if you are using the live link.
 
 ```
+
 https://learnchain-aj5s.onrender.com
+
 ```
+
+### But your localhost:port should serve as the root url when running the api locally.
+
+i.e
+
+```
+http://localhost:3000/courses
+
+```
+
+---
 
 ### Setup and test locally
 
 4. **Add a Course (POST /courses)**
 
-URL: http://localhost:3000/courses
+URL: {root url}/courses
 
 Method: POST
 Example body:
 
 ```
+
 {
 "courseId": "101",
 "courseName": "Blockchain Basics",
 "reward": 10
 }
+
 ```
 
 5. **Retrieve All Courses (GET /courses)**
 
-URL: http://localhost:3000/courses
+URL: {root url}/courses
 
 Method: GET
 Response:
 
 ```
+
 {
 "courseId": "101",
 "courseName": "Blockchain Basics",
@@ -74,7 +90,7 @@ Response:
 
 6. **Update User Progress (POST /progress)**
 
-URL: http://localhost:3000/progress
+URL: {root url}/progress
 
 Method: POST
 
@@ -87,7 +103,7 @@ Method: POST
 
 7. **Get User Progress (GET /progress/{userId})**
 
-URL: http://localhost:3000/progress/123
+URL: {root url}/progress/123
 
 Method: GET
 
