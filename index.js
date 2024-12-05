@@ -12,7 +12,7 @@ const github_repo = "https://github.com/Moses-main/LearnChain";
 // route endpoint
 app.get("/", (req, res) => {
   res.send(
-    `Welcome to Learn Chain please visit ${github_repo} for instruction on how to consume the API`
+    `Welcome to Learn Chain please visit ${github_repo} for instruction on how to use the api`
   );
 });
 
